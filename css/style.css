@@ -221,7 +221,7 @@ ul {
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
-.footer-col ul li a {
+.footer-col ul li {
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff;
@@ -299,11 +299,13 @@ ul {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 20px;
 }
 
-
+.openMenu {
+  opacity: 0;
+}
 
 /* responsividade */
 @media (max-width: 576px) {
@@ -313,14 +315,14 @@ ul {
   header {
     width: 100vw;
   }
- 
+
   nav {
     width: 150px;
     height: 100vh; /*altura da tela do dispositivo */
     position: absolute; /*definindo uma posição "fixa" na tela*/
     z-index: 10000; /*fazendo empilhamento. Fazendo ficar acima de 9999 itens*/
     top: 0; /*posição inicial de topo 0*/
-    left:-150px; /*posilção inicial a esquerda 0*/
+    left: -150px; /*posilção inicial a esquerda 0*/
   }
 
   .main-one h4 {
@@ -341,10 +343,10 @@ ul {
   }
 
   #imgroupa {
-    width: 42%;
+    width: 40%;
     height: auto;
     position: absolute;
-    left: 40px;
+    left: 35px;
     top: 360px;
   }
 
@@ -353,33 +355,94 @@ ul {
   }
 
   .main-two {
-    width: 80%;
-    height: auto;
+    width: 46%;
+    height: 600px;
     position: absolute;
     left: 12px;
     right: auto;
-    top: 470px
+    top: 470px;
   }
 
   #imgmapa {
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 14px;
+    margin-top: 40px;
     width: 100%;
     height: 250px;
   }
 
   .local .txt1 {
     position: absolute;
-    font-size: 10px;
-    top: 800px;
+    font-size: 6px;
+    top: 1000px;
   }
 
   .txt {
     position: absolute;
-    left: -150px;
+    left: -175px;
     z-index: 5000;
-    font-size: 10px;
-    top: 280px;
+    font-size: 8px;
+    top: 290px;
+    width: 220px;
+  }
+
+  #txtcountries {
+    color: white;
+    position: absolute;
+    left: 35px;
+    top: 390px;
+    font-size: 15px;
+  }
+
+  #mapa {
+    width: 45%;
+    height: auto;
+  }
+
+  .footer {
+    width: 50%;
+  }
+
+  .container {
+    gap: 10px;
+  }
+
+  .footer-col h4 {
+    font-size: 9px;
+  }
+
+  .footer-col h4::before {
+    margin-left: 10px;
+  }
+
+  .footer-col ul li {
+    font-size: 7px;
+  }
+
+  .row {
+    gap: 50px;
+  }
+
+  .nossolocal {
+    text-align: center;
+    position: absolute;
+    left: -160px;
+    top: 1750px;
+    font-size: 20px;
+    z-index: 1000;
+  }
+
+  .local .txt1 {
+    position: absolute;
+    z-index: 1000;
+    left: -155px;
+    top: 10px;
+    font-size: 15px;
+  }
+
+  #regioes {
+    color: white;
+    margin-left: -170px;
+    margin-top: 320px;
   }
 
   nav ul li {
@@ -388,6 +451,7 @@ ul {
 
   .openMenu {
     margin-left: -50px;
+    opacity: 1;
   }
 
   .logo {
@@ -402,12 +466,12 @@ ul {
     top: 40px;
   }
 
-  #txtcountries{
+  #txtcountries {
     width: 100%;
     margin-left: 0px;
     padding-top: 0px;
   }
-  .imgroupa{
+  .imgroupa {
     width: 100px;
     height: 100px;
   }
@@ -430,7 +494,6 @@ ul {
 }
 
 @media (min-width: 768px) {
-  
 }
 
 @media (min-width: 992px) {
