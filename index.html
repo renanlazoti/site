@@ -10,52 +10,61 @@
     <title>Landing Page</title>
 </head>
 <body>
+    
         <header>
+            <a href="#" onclick="openNav()" class="openMenu">&#9776;</a>
+
             <nav class="navigation">
                 <a href="index.html"><img class="logo" src="components/img/logowhite.png" alt="Logo do site"></a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Localização</a></li>
-                </ul>
-                <ul class="contato">
-                    <li><a href="#" id="btn-contato">Entre em Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#local">Localização</a></li>
                 </ul>
             </nav>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+    
+            
         </header>
 
+    <section id="sobre">
         <main>
             <div class="main-one">
                 <h4>Agency e Distribution</h4>
                 <h2>Company<br/>focused on<br/>famous brands</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <ul class="lean-more">
-                    <li><a href="#" id="btn-telefone" >Entre em Contato</a></li>
-                    <li><a href="#" id="leia">Leia mais</a></li>
-                </ul>
             </div>
             <div>
                 <img src="components/img/teste1.jpg" alt="" id="imgroupa">
             </div>
         </main>
+    </section>
 
+    <section id="local">
         <main>
             <div class="main-two">
                 <img src="components/img/imgmapaaaaa.png" alt="" id="imgmapa">
                 <div class="local">
-                <h3 id="txt1">Lorem ipsoum dolor sit amet</h3>
-                <p class="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <h4 id="txtcountries">Distribuição na região</h4>
-                <h3 class="txt">Tatuapé</h3>
-                <h3 class="txt">Itaquera</h3>
-                <h3 class="txt">Ipiranga</h3>
-                <ul class="contato">
-                    <li><a href="#" id="btn-telefone2">Entre em Contato</a></li>
-                </ul>
+                    <h3 class="txt1">Lorem ipsoum dolor sit amet</h3>
+                    <p class="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <h4 id="txtcountries">Distribuição na região</h4>
+                    <h3 class="regioes">Tatuapé</h3>
+                    <h3 class="regioes">Itaquera</h3>
+                    <h3 class="regioes">Ipiranga</h3>
                 </div>
             </div>
         </main>
+    </section>
+
+    
         <main>
             <div id="advantages">
                 <h4>Our Advantages</h4>
@@ -85,7 +94,8 @@
             <div> 
         </div>
         </div>
-    </main>
+        </main>
+    
 
     <main style="padding-bottom: 80px;">
         <h2 style="text-align: center;">Nossa Localização</h2>
@@ -130,5 +140,7 @@
             </div>
         </div>
    </footer>
+
+   <script src="index.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
 }
+
 body {
   font-family: poppinsregular;
 }
@@ -26,6 +27,7 @@ header {
   gap: 60px;
   margin-left: 60px;
 }
+
 .navigation .contato {
   margin-left: 400px;
   border: 10px;
@@ -127,7 +129,7 @@ p {
 .local {
   padding-top: 130px;
 }
-#txt1 {
+.txt1 {
   color: white;
   font-size: 30px;
   margin-left: 210px;
@@ -257,22 +259,163 @@ ul {
   display: flex;
 }
 
+/* menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+
 /* responsividade */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   body {
-    width: 100%;
+    width: 100vw;
   }
   header {
-    width: 100%;
+    width: 100vw;
   }
-  .navigation {
-    width: 200%;
+ 
+  nav {
+    width: 150px;
+    height: 100vh; /*altura da tela do dispositivo */
+    position: absolute; /*definindo uma posição "fixa" na tela*/
+    z-index: 10000; /*fazendo empilhamento. Fazendo ficar acima de 9999 itens*/
+    top: 0; /*posição inicial de topo 0*/
+    left:-150px; /*posilção inicial a esquerda 0*/
+  }
+
+  .main-one h4 {
+    margin-left: 30px;
+    font-size: 10px;
+    margin-top: -30px;
+  }
+
+  .main-one h2 {
+    margin-left: 30px;
+    font-size: 30px;
+  }
+
+  .main-one p {
+    margin-left: 40px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  #imgroupa {
+    width: 42%;
     height: auto;
+    position: absolute;
+    left: 40px;
+    top: 360px;
   }
+
+  .navigation ul li {
+    opacity: 0;
+  }
+
+  .main-two {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    left: 12px;
+    right: auto;
+    top: 470px
+  }
+
+  #imgmapa {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+  }
+
+  .local .txt1 {
+    position: absolute;
+    font-size: 10px;
+    top: 800px;
+  }
+
+  .txt {
+    position: absolute;
+    left: -150px;
+    z-index: 5000;
+    font-size: 10px;
+    top: 280px;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  .openMenu {
+    margin-left: -50px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0px;
+    background-color: aqua;
+  }
+
   #btn-contato {
     position: absolute;
-    right: -400px;
-    top: 45px;
+    right: -155px;
+    top: 40px;
+  }
+
+  #txtcountries{
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+  .imgroupa{
+    width: 100px;
+    height: 100px;
+  }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
   }
 }
 
@@ -284,6 +427,10 @@ ul {
   header {
     width: 100%;
   }
+}
+
+@media (min-width: 768px) {
+  
 }
 
 @media (min-width: 992px) {
