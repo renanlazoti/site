@@ -16,6 +16,13 @@ body {
 header {
   padding: 20px 70px;
   background-color: black;
+  position: fixed;
+  z-index: 10000;
+  margin-bottom: 300px;
+}
+
+#space {
+  height: 200px;
 }
 .navigation {
   display: flex;
@@ -77,6 +84,7 @@ p {
   left: 65%;
   top: 33%;
   border-radius: 20px;
+  transition: all 0.5s;
 }
 .txtregiao {
   margin-top: 18px;
@@ -84,7 +92,6 @@ p {
 #regioes h3 {
   color: white;
   margin-left: 212px;
-
 }
 
 #txtcountries {
@@ -183,6 +190,7 @@ ul {
 .footer-col {
   width: 25%;
   padding: 0 15px;
+  padding-left: 15%;
 }
 .footer-col h4 {
   font-size: 18px;
@@ -243,6 +251,11 @@ ul {
 }
 .row {
   display: flex;
+}
+
+.nossolocal {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* menu */
