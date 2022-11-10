@@ -69,37 +69,29 @@ h2 {
 p {
   width: 40%;
   margin-left: 210px;
-  font-size: 12pt;
-  line-height: 16pt;
-}
-#btn-telefone {
-  border: 2px solid black;
-  padding: 15px;
-  color: black;
-}
-#btn-telefone:hover {
-  background-color: black;
-  color: white;
-  transition: 0.5s all;
-}
-.lean-more {
-  padding-top: 60px;
-  margin-left: 210px;
-  display: flex;
-  gap: 60px;
-}
-#leia {
-  color: black;
-  text-decoration: underline;
-}
-#leia:hover {
-  color: #c3c3c3;
-  transition: 1s all;
+  font-size: 15pt;
+  line-height: 25pt;
 }
 #imgroupa {
   position: absolute;
   left: 65%;
-  top: 30%;
+  top: 33%;
+  border-radius: 20px;
+}
+.txtregiao {
+  margin-top: 18px;
+}
+#regioes h3 {
+  color: white;
+  margin-left: 212px;
+
+}
+
+#txtcountries {
+  color: white;
+  font-size: 25px;
+  padding-top: 80px;
+  margin-left: 200px;
 }
 /* Main 2 */
 .main-two {
@@ -133,12 +125,6 @@ p {
   color: white;
   font-size: 30px;
   margin-left: 210px;
-}
-#txtcountries {
-  color: silver;
-  font-size: 25px;
-  padding-top: 80px;
-  margin-left: 200px;
 }
 #btn-telefone2 {
   border: 2px solid white;
